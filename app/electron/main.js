@@ -22,7 +22,7 @@ function createWindow() {
     if (isDevelopment) {
         window.loadURL("http://localhost:40992");
     } else {        
-        window.loadFile("app/src/index.html");
+        window.loadFile("app/dist/index.html");
     }
 }
 
