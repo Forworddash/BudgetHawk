@@ -1,7 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Tabs from "./components/Tabs";
-
+import Calculators from "./components/Calculators";
+import Dashboard from "./components/Dashboard";
+import Settings from "./components/Settings";
 import "./index.css";
 
 const container = document.getElementById("target");
@@ -15,25 +17,14 @@ root.render(
     <div className="">
         <Tabs>
             <div label='Dashboard'>
-                <div>
-                    <div className="text-center bg-gray-200">
-                        <p>Test</p>    
-                    </div>    
-                </div>
+                <Dashboard></Dashboard>
             </div>
+            
             <div label='Calculators'>
-                <div>
-                    <div className="text-center bg-gray-200">
-                        <p>Test</p>    
-                    </div>    
-                </div>
+                <Calculators></Calculators>
             </div>
             <div label='Settings'>
-                <div className="">
-                    <div className="text-center bg-gray-200">
-                        <p>Settings</p>    
-                    </div>    
-                </div>
+                <Settings></Settings>
             </div>
         </Tabs>
         
