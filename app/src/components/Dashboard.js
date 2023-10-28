@@ -7,5 +7,6 @@ const Dashboard = () => (
     </div>
   </div>
 );
+// Dashboard should show current weekly, monthly balances left on expenses and when they're coming up, ie showing the next one
 
 export default Dashboard;
