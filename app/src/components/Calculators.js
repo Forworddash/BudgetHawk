@@ -7,14 +7,15 @@ const Calculators = () => {
   const [years, setYears] = useState("");
   const [compoundingFrequency, setCompoundingFrequency] = useState("");
   const [futureValue, setFutureValue] = useState("");
-
+    // Add section to work backwords from future value to initial investment
+    // and additional monthly contributions to see how much you would need to contribute to reach your goal
   const calculateCompoundInterest = () => {
     const P = parseFloat(initialInvestment);
     const PMT = parseFloat(monthlyContribution);
     const r = parseFloat(interestRate) / 100; // Divide by 100 to convert percentage to decimal.
     const n = parseFloat(compoundingFrequency);
     const t = parseFloat(years);
-    
+
     const futureValue = P * Math.pow(1 + r / n, n * t) + PMT * ((Math.pow(1 + r / n, n * t) - 1) / (r / n));
 
     setFutureValue(futureValue.toFixed(2));

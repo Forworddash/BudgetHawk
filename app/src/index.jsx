@@ -4,6 +4,7 @@ import Tabs from "./components/Tabs";
 import Calculators from "./components/Calculators";
 import Dashboard from "./components/Dashboard";
 import Settings from "./components/Settings";
+import Budgets from "./components/Budgets";
 import "./index.css";
 
 const container = document.getElementById("target");
@@ -23,9 +24,13 @@ root.render(
             <div label='Calculators'>
                 <Calculators></Calculators>
             </div>
+            <div label='Budgets'>
+                <Budgets></Budgets>
+            </div>
             <div label='Settings'>
                 <Settings></Settings>
             </div>
+            
         </Tabs>
         
         {/* <div className="flex flex-row space-x-4">
